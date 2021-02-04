@@ -10,7 +10,7 @@ const weathercode = (longitude, latitude, callback) => {
         } else if (response.body.error) {
             callback('Unable to find location'), undefined
         } else {
-            callback(undefined, `${response.body.current.weather_descriptions[0]}. It is currently ${response.body.current.temperature} degrees out.`)       
+            callback(undefined, `${response.body.current.weather_descriptions[0]}. It is currently ${response.body.current.temperature} degrees out. The humidity is ${response.body.current.humidity}%.`)       
         }
     })
 }
