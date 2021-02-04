@@ -1,15 +1,3 @@
-console.log('Client side javascript message')
-
-// fetch('http://puzzle.mead.io/puzzle').then((response) => {
-//     response.json().then((data) => {
-//         console.log(data)
-//     })
-// })
-
-// async function getData() {
-//     const response = await fetch('http://puzzle.mead.io/puzzle')
-
-
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
